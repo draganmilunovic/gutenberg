@@ -358,7 +358,7 @@ export class RichText extends Component {
 
 		const { start, end } = this.createRecord();
 
-		this.onSelectionChange( start, end );
+		this.props.onSelectionChange( start, end );
 		this.savedSelectionStart = start;
 		this.savedSelectionEnd = end;
 
